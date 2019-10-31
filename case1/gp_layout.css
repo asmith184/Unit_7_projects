@@ -47,7 +47,15 @@ article{
 */
 
 @media only screen and (max-width: 480px){
-   
+   img.panel{
+      width: 100%;
+   }
+   nav.horizontal{
+      order: 99;
+   }
+   body > footer{
+      order: 100;
+   }
 }
 
 
@@ -56,3 +64,28 @@ article{
    ===================================================
 */
 
+@media only screen and (min-width: 480px){
+   nav.horizontal ul{
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row;
+      -webkit-flex-flow: row;
+      height: 40;
+   }
+   nav.horizontal ul li{
+      flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+   }
+   img.size1{
+      width: 100%;
+   }
+   img.size2{
+      width: 60%;
+   }
+   img.size3{
+      width: 40%;
+   }
+   img.size4{
+      width: 30%;
+   }
+}
